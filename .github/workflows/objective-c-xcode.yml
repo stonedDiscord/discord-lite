@@ -18,9 +18,9 @@ jobs:
         run: |
           wget https://raw.githubusercontent.com/devernay/xcodelegacy/master/XcodeLegacy.sh
           chmod +x ./XcodeLegacy.sh
-          ./XcodeLegacy.sh -compilers install
-          ./XcodeLegacy.sh -osx105 install
-          ./XcodeLegacy.sh -osx107 install
+          sudo ./XcodeLegacy.sh -compilers install
+          sudo ./XcodeLegacy.sh -osx105 install
+          sudo ./XcodeLegacy.sh -osx107 install
       - name: Set Default Scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
