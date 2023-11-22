@@ -18,7 +18,7 @@ jobs:
         run: |
           wget https://raw.githubusercontent.com/devernay/xcodelegacy/master/XcodeLegacy.sh
           chmod +x ./XcodeLegacy.sh
-          sudo ./XcodeLegacy.sh install
+          sudo mkdir /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Xcode/Plug-ins/
           sudo ./XcodeLegacy.sh -compilers install
           sudo ./XcodeLegacy.sh -osx105 install
           sudo ./XcodeLegacy.sh -osx107 install
